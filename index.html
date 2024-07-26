@@ -7,21 +7,32 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Qe+8LkGd5S/3L2eSPO9XjOHNEMDg/C/+H1nQxYyEwqy/0mROm8W1IrEELsAItV8R6MUEjEGIHG+TVkIix2zXoA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="is-preload">
     <style>
-        p {
-            background-image: url('');
+        @media (max-width: 951px) {
+            .logo img {
+                width: 69.64px;
+                height: 69.64px;
+                border-radius: 50%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .logo img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+            }
         }
     </style>
+</head>
+<body class="is-preload">
 
     <!-- Wrapper -->
     <div id="wrapper">
 
         <header id="header">
             <div class="logo">
-                <img src="images/manav.jpg" style="border-radius: 50%; width: 120px; height: 120px; object-fit: cover;" />
-
+                <img src="images/manav.jpg" alt="Manav Maheshwari" />
             </div>
             <div class="content">
                 <div class="inner">
@@ -49,8 +60,8 @@
             <!-- About -->
             <article id="about">
                 <h2 class="major">About</h2>
-                <span class="image main"><img src="https://engineering.nyu.edu/sites/default/files/styles/content_header_1024_2x/public/2018-03/program-comp-sci.jpg?h=e1d1bc8a&itok=4ZcLPX4K" style="width:720px; height: 200px" alt="" /></span>
-                <p>I am an undergraduate computer science student at the University of New Brunswick, with a keen interest in cybersecurity. I have experience in Python, C++, Java, C and SQL. I am always eager to learn new skills and technologies, and I enjoy solving challenging problems. I am looking for opportunities to apply my knowledge and passion in various fields such as cybersecurity, data science, and web development.</p>
+                <span class="image main"><img src="https://engineering.nyu.edu/sites/default/files/styles/content_header_1024_2x/public/2018-03/program-comp-sci.jpg?h=e1d1bc8a&itok=4ZcLPX4K" style="height: 200px" alt="" /></span>
+                <p>I’m a computer science student at the University of New Brunswick, passionate about solving challenging problems. With experience in Python, C++, Java, C, and SQL, I’m eager to explore fields like cybersecurity, data science, and web development. As I continue my journey, I’m excited to learn and contribute to innovative projects.</p>
             </article>
 
             <!-- Projects -->
@@ -63,7 +74,7 @@
                     <p><li>Handling the API connection between the application and the server.</li></p>
                     <p><li>Visualizing GitHub data to show collaboration.</li></p>
                 </div>
-                <div class="milestone">
+                <div class="Projects">
                     <h3>Project #2: Hotel Management System</h3>
                     <h4><el>Python, CSV</el></h4>
                     <p><li>Developed a hotel management system in Python.</li></p>
@@ -97,7 +108,6 @@ while (!deck.isInOrder()) {
     print 'Iteration ' + i;
     deck.shuffle();
     i++;
-}
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                 </section>
@@ -171,7 +181,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                                 </tr>
                                 <tr>
                                     <td>Item 3</td>
-                                    <td> Morbi faucibus arcu accumsan lorem.</td>
+                                    <td>Morbi faucibus arcu accumsan lorem.</td>
                                     <td>29.99</td>
                                 </tr>
                                 <tr>
@@ -217,7 +227,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                                 </tr>
                                 <tr>
                                     <td>Item 3</td>
-                                    <td> Morbi faucibus arcu accumsan lorem.</td>
+                                    <td>Morbi faucibus arcu accumsan lorem.</td>
                                     <td>29.99</td>
                                 </tr>
                                 <tr>
@@ -249,7 +259,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                     </ul>
                     <ul class="actions">
                         <li><a href="#" class="button">Default</a></li>
+                        <li><a href="#" class="button large">Large</a></li>
                         <li><a href="#" class="button small">Small</a></li>
+                    </ul>
+                    <ul class="actions fit">
+                        <li><a href="#" class="button primary fit">Fit</a></li>
+                        <li><a href="#" class="button fit">Fit</a></li>
+                    </ul>
+                    <ul class="actions fit small">
+                        <li><a href="#" class="button primary fit small">Fit + Small</a></li>
+                        <li><a href="#" class="button fit small">Fit + Small</a></li>
                     </ul>
                     <ul class="actions">
                         <li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
@@ -299,10 +318,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                                 <input type="checkbox" id="demo-human" name="demo-human" checked>
                                 <label for="demo-human">Not a robot</label>
                             </div>
-                        </div>
-                        <div class="field">
-                            <label for="demo-message">Message</label>
-                            <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                            <div class="field">
+                                <label for="demo-message">Message</label>
+                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                            </div>
                         </div>
                         <ul class="actions">
                             <li><input type="submit" value="Send Message" class="primary" /></li>
@@ -317,7 +336,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
         <!-- Footer -->
         <footer id="footer">
-            <p class="copyright">&copy; 2024 Manav Maheshwari
+            <p class="copyright">&copy; 2024 Manav Maheshwari</a>
+            </p>
         </footer>
 
     </div>
@@ -331,5 +351,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 </html>
